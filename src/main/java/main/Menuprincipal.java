@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Menuprincipal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Admin admin = new Admin();
+        Clientemenu mc = new Clientemenu();
         int opcion;
-
         do {
             System.out.println("\n--- Sistema de Gestión de Reservas ---");
             System.out.println("1. Iniciar Sesión como Cliente");
@@ -17,9 +18,9 @@ public class Menuprincipal {
 
             switch (opcion) {
                 case 1:
+                    mc.menuCliente();
                     break;
                 case 2:
-                    Admin admin = new Admin();
                     admin.login();
                     break;
                 case 3:
@@ -29,7 +30,6 @@ public class Menuprincipal {
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
         } while (opcion != 3);
-
         scanner.close();
     }
 }
