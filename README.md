@@ -6,7 +6,8 @@ alquiler de vehículos que tiene una flota diversa. El sistema debe permitir a l
 consultar y reservar vehículos, gestionar las reservas y calcular el costo total basado en
 varios factores. Además, debe permitir al administrador de la flota añadir nuevos vehículos
 y verificar su disponibilidad. Mucha suerte muchachos, demuestren lo que han aprendido :)
-3. Requerimientos Funcionales
+
+2. Requerimientos Funcionales
 
 2.1. Clases Principales
 Debes crear las siguientes clases base:
