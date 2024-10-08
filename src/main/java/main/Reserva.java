@@ -3,31 +3,25 @@ package main;
 import java.time.LocalDate;
 
 public class Reserva {
-    private static int contadorReservas = 1;
-    private String idReserva;
     private Cliente cliente;
     private Vehiculo vehiculo;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
-    private double costoTotal;
+    private boolean seguro;
+    private boolean gps;
+    private boolean confirmada;
 
-    public Reserva(Cliente cliente, Vehiculo vehiculo, LocalDate fechaInicio, LocalDate fechaFin, boolean seguro, boolean gps) throws Exception {
-        if (fechaFin.isBefore(fechaInicio)) {
-            throw new Exception("La fecha de fin no puede ser antes de la fecha de inicio.");
-        }
-        this.idReserva = "R" + contadorReservas++;
+    public Reserva(Cliente cliente, Vehiculo vehiculo, LocalDate fechaInicio, LocalDate fechaFin, boolean seguro, boolean gps) {
         this.cliente = cliente;
         this.vehiculo = vehiculo;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
-        int dias = (int) (fechaFin.toEpochDay() - fechaInicio.toEpochDay()) + 1;
-        this.costoTotal = vehiculo.calcularPrecio(dias, seguro, gps);
+        this.seguro = seguro;
+        this.gps = gps;
+        this.confirmada = false;
     }
 
-    public String getIdReserva() {
-        return idReserva;
-    }
-
+    // Getters y Setters
     public Cliente getCliente() {
         return cliente;
     }
@@ -44,7 +38,27 @@ public class Reserva {
         return fechaFin;
     }
 
-    public double getCostoTotal() {
-        return costoTotal;
+    public boolean isSeguro() {
+        return seguro;
+    }
+
+    public boolean isGps() {
+        return gps;
+    }
+
+    public boolean isConfirmada() {
+        return confirmada;
+    }
+
+    public void confirmarReserva() {
+        this.confirmada = true;
+        this.vehiculo.setDisponible(false);
+    }
+
+    @Override
+    public String toString() {
+        return "Reserva [Cliente=" + cliente.getNombre() + ", Vehículo=" + vehiculo.getIdVehiculo() +
+                ", Fecha Inicio=" + fechaInicio + ", Fecha Fin=" + fechaFin +
+                ", Seguro=" + seguro + ", GPS=" + gps + ", Confirmada=" + confirmada + "]";
     }
 }

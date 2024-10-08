@@ -19,6 +19,6 @@ public class Auto extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString() + " - Auto (" + tipoCombustible + ")";
+        return super.toString() + ", Tipo de Combustible: " + tipoCombustible;
     }
 }
