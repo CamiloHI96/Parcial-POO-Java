@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe15cdb-f1fb-4f70-92b5-35e5c838705b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Auto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Autobus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Autobus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Camion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Clientemenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Clientemenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Menuprincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Menuprincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,14 +53,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Parcial-POO-Java [:main.Menuprincipal.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "CamiloH",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Parcial-POO-Java [:main.Menuprincipal.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;CamiloH&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Menuprincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Menuprincipal" />

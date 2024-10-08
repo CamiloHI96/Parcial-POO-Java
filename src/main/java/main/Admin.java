@@ -235,4 +235,8 @@ public class Admin {
             System.out.println("No hay vehículos disponibles en este momento.");
         }
     }
+
+    public List<Vehiculo> getFlotaVehiculos() {
+        return flotaVehiculos;
+    }
 }
