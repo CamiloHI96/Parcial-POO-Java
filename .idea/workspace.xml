@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe15cdb-f1fb-4f70-92b5-35e5c838705b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Auto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Autobus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Autobus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Camion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Menuprincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Menuprincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Moto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Vehiculo.java" afterDir="false" />
     </list>
@@ -32,21 +36,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "CamiloHI96"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CamiloHI96&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CamiloHI96/Parcial-POO-Java.git",
-    "accountId": "ac727f8b-b053-4461-b554-902cdb3e4d01"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CamiloHI96/Parcial-POO-Java.git&quot;,
+    &quot;accountId&quot;: &quot;ac727f8b-b053-4461-b554-902cdb3e4d01&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2n8SVjJE8TGTA4TMzDyQIgF8RKW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -57,11 +61,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Parcial-POO-Java [:main.Menuprincipal.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "CamiloH",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Menuprincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Menuprincipal" />
+      <module name="Parcial-POO-Java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Menuprincipal" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
