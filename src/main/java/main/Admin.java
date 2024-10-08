@@ -1,19 +1,31 @@
 package main;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Admin {
-    Scanner scanner = new Scanner(System.in);
-    int opcion;
-    private List<Vehiculo> flotaVehiculos = new ArrayList<>();
+    private Scanner scanner;
+    private int opcion;
+    private List<Vehiculo> flotaVehiculos;
+    private List<Reserva> reservas; // Añadido lista de reservas
     private final String username = "admin";
     private final String password = "admin";
-    
+
+    // Constructor que recibe la lista de vehículos y reservas
+    public Admin(List<Vehiculo> flotaVehiculos, List<Reserva> reservas) {
+        this.scanner = new Scanner(System.in);
+        this.flotaVehiculos = flotaVehiculos;
+        this.reservas = reservas;
+    }
+
+    // Constructor que recibe la lista de vehículos
+    public Admin(List<Vehiculo> flotaVehiculos) {
+        this.scanner = new Scanner(System.in);
+        this.flotaVehiculos = flotaVehiculos;
+    }
+
     public void login() {
-        System.out.println("Iniciar sesión como Administrador");
+        System.out.println("\n--- Iniciar Sesión como Administrador ---");
         System.out.print("Usuario: ");
         String userInput = scanner.nextLine();
         System.out.print("Contraseña: ");
@@ -23,42 +35,58 @@ public class Admin {
             menuAdmin();
         } else {
             System.out.println("Credenciales incorrectas. Acceso denegado.");
-            System.out.println("Volviendo al menu principal...");
-            main.Menuprincipal.main(null);
         }
     }
+
     private void menuAdmin() {
         do {
-            System.out.print("\n --- Bienvenido al menu del administrador ---\n");
-            System.out.println("Menú Administrador" + " " + username);
+            System.out.println("\n--- Menú Administrador ---");
             System.out.println("1. Ver reservas");
             System.out.println("2. Añadir vehículo");
             System.out.println("3. Ver vehículos disponibles");
-            System.out.println("4. Volver Menu Principal");
-            System.out.print("Selecciona una opción: ");
+            System.out.println("4. Volver al Menú Principal");
+            System.out.print("Seleccione una opción: ");
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Entrada inválida. Por favor, ingresa un número.");
+                scanner.nextLine();
+                continue;
+            }
+
             opcion = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
+                    verReservas();
                     break;
                 case 2:
-                    añadirVehiculo(scanner);
+                    añadirVehiculo();
                     break;
                 case 3:
                     verVehiculosDisponibles();
                     break;
                 case 4:
-                    System.out.println("Saliendo del menú del administrador...");
-                    main.Menuprincipal.main(null);
+                    System.out.println("Volviendo al Menú Principal...");
                     break;
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
         } while (opcion != 4);
-        scanner.close();
     }
 
-    private void añadirVehiculo(Scanner scanner){
+    private void verReservas() {
+        System.out.println("\n--- Reservas de Todos los Usuarios ---");
+        if (reservas.isEmpty()) {
+            System.out.println("No hay reservas registradas.");
+        } else {
+            for (Reserva reserva : reservas) {
+                System.out.println(reserva);
+            }
+        }
+    }
+
+    private void añadirVehiculo() {
         while (true) {
             System.out.println("\n--- Añadir Vehículo ---");
             System.out.println("Tipos de Vehículos:");
@@ -79,7 +107,7 @@ public class Admin {
             scanner.nextLine();
 
             if (tipo == 5) {
-                System.out.println("\nVolviendo al Menú del Admin...");
+                System.out.println("\nVolviendo al Menú del Administrador...");
                 break;
             }
 
@@ -90,6 +118,10 @@ public class Admin {
 
                 try {
                     idVehiculo = Integer.parseInt(idInput);
+                    if (idVehiculo <= 0) {
+                        System.out.println("El ID debe ser un número positivo.");
+                        continue;
+                    }
                 } catch (NumberFormatException e) {
                     System.out.println("ID inválido. Debe ser un número entero.");
                     continue;
@@ -234,9 +266,5 @@ public class Admin {
         if (!hayDisponibles) {
             System.out.println("No hay vehículos disponibles en este momento.");
         }
-    }
-
-    public List<Vehiculo> getFlotaVehiculos() {
-        return flotaVehiculos;
     }
 }
