@@ -19,6 +19,6 @@ public class Moto extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString() + " - Moto (" + cilindrada + "cc)";
+        return super.toString() + ", Cilindrada: " + cilindrada + "cc";
     }
 }

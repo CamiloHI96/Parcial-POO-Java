@@ -1,6 +1,6 @@
 package main;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private int idVehiculo;
     private String marca;
     private String modelo;
@@ -50,17 +50,6 @@ public class Vehiculo {
         this.año = año;
     }
 
-    public double calcularPrecio(int dias, boolean seguro, boolean gps) {
-        double total = costoDiario * dias;
-        if (seguro) {
-            total += costoDiario * 0.10 * dias;
-        }
-        if (gps) {
-            total += 5 * dias;
-        }
-        return total;
-    }
-
     public double getCostoDiario() {
         return costoDiario;
     }
@@ -79,6 +68,7 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return "ID: " + idVehiculo + ", Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Costo Diario: $" + costoDiario + ", Disponible: " + disponible;
+        return "ID: " + idVehiculo + ", Marca: " + marca + ", Modelo: " + modelo +
+                ", Año: " + año + ", Costo Diario: $" + costoDiario;
     }
 }

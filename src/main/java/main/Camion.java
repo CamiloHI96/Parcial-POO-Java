@@ -1,6 +1,5 @@
 package main;
 
-// Camioneta.java
 public class Camion extends Vehiculo {
     private int capacidadCarga;
 
@@ -20,6 +19,6 @@ public class Camion extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString() + " - Camioneta (" + capacidadCarga + "kg)";
+        return super.toString() + ", Capacidad de Carga: " + capacidadCarga + "kg";
     }
 }
