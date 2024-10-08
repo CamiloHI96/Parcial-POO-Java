@@ -4,8 +4,8 @@ package main;
 public class Autobus extends Vehiculo {
     private int capacidadPasajeros;
 
-    public Autobus(String idVehiculo, String marca, String modelo, int año, int capacidadPasajeros) {
-        super(idVehiculo, marca, modelo, año);
+    public Autobus(String idVehiculo, String marca, String modelo, int año, double costoDiario, int capacidadPasajeros) {
+        super(idVehiculo, marca, modelo, año, costoDiario);
         this.capacidadPasajeros = capacidadPasajeros;
     }
 
