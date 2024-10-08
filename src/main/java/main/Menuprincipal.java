@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-public class Main {
+public class Menuprincipal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
@@ -19,6 +19,8 @@ public class Main {
                 case 1:
                     break;
                 case 2:
+                    Admin admin = new Admin();
+                    admin.login();
                     break;
                 case 3:
                     System.out.println("Saliendo del programa...");
