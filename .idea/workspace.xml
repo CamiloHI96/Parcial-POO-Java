@@ -4,20 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe15cdb-f1fb-4f70-92b5-35e5c838705b" name="Changes" comment="" />
+    <list default="true" id="fbe15cdb-f1fb-4f70-92b5-35e5c838705b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Auto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Autobus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Autobus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Camion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Camion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Moto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Vehiculo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "CamiloHI96"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CamiloHI96/Parcial-POO-Java.git",
+    "accountId": "ac727f8b-b053-4461-b554-902cdb3e4d01"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2n8SVjJE8TGTA4TMzDyQIgF8RKW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,7 +58,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -4,8 +4,8 @@ package main;
 public class Camion extends Vehiculo {
     private int capacidadCarga;
 
-    public Camion(String idVehiculo, String marca, String modelo, int año, int capacidadCarga) {
-        super(idVehiculo, marca, modelo, año);
+    public Camion(String idVehiculo, String marca, String modelo, int año, double costoDiario, int capacidadCarga) {
+        super(idVehiculo, marca, modelo, año, costoDiario);
         this.capacidadCarga = capacidadCarga;
     }
 
