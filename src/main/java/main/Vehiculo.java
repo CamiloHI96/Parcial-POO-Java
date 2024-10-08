@@ -1,28 +1,28 @@
 package main;
 
 public class Vehiculo {
-    private String idVehiculo;
+    private int idVehiculo;
     private String marca;
     private String modelo;
     private int año;
     private double costoDiario;
     private boolean disponible;
 
-    public Vehiculo(String idVehiculo, String marca, String modelo, int año, double costoDiario) {
+    public Vehiculo(int idVehiculo, String marca, String modelo, int año, double costoDiario) {
         this.idVehiculo = idVehiculo;
         this.marca = marca;
         this.modelo = modelo;
         this.año = año;
         this.costoDiario = costoDiario;
-        this.disponible = true; // Inicialmente disponible
+        this.disponible = true;
     }
 
     // Getters y Setters
-    public String getIdVehiculo() {
+    public int getIdVehiculo() {
         return idVehiculo;
     }
 
-    public void setIdVehiculo(String idVehiculo) {
+    public void setIdVehiculo(int idVehiculo) {
         this.idVehiculo = idVehiculo;
     }
 
@@ -79,6 +79,6 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return "ID: " + idVehiculo + ", Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Costo Diario: $" + costoDiario;
+        return "ID: " + idVehiculo + ", Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Costo Diario: $" + costoDiario + ", Disponible: " + disponible;
     }
 }
