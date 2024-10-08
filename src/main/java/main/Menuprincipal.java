@@ -6,7 +6,7 @@ public class Menuprincipal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Admin admin = new Admin();
-        Clientemenu mc = new Clientemenu();
+        Clientemenu mc = new Clientemenu(admin.getFlotaVehiculos());
         int opcion;
         do {
             System.out.println("\n--- Sistema de Gestión de Reservas ---");
